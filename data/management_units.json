@@ -1,0 +1,101 @@
+[
+ {
+  "order": 1,
+  "mu": "FMA Ia",
+  "country": "Brazil",
+  "name": "Espírito Santo",
+  "range": "Northern Espírito Santo, from Itaúnas (18°25′S); summer distribution between Conceição da Barra and Santa Cruz",
+  "note": "Northernmost, demographically isolated population; part of the subspecies P. b. pukusi. High-density area near the Doce River mouth.",
+  "src": "Sucunza et al. (2023); CMS COP15 Doc.31.3.7"
+ },
+ {
+  "order": 2,
+  "mu": "FMA Ib",
+  "country": "Brazil",
+  "name": "Northern Rio de Janeiro",
+  "range": "Northern Rio de Janeiro (about 21°18′S–22°25′S)",
+  "note": "Separated from FMA Ia by a distribution gap; genetically distinct (Cunha et al. 2014).",
+  "src": "Di Beneditto & Ramos; Cunha et al. (2014)"
+ },
+ {
+  "order": 3,
+  "mu": "FMA IIa",
+  "country": "Brazil",
+  "name": "Rio de Janeiro (south) and northern São Paulo",
+  "range": "Northern limit at Ilha Grande Bay, possibly Jaconé (22°56′S); northern São Paulo coast",
+  "note": "Strandings recorded within the former gap between Macaé and Ilha Grande (Azevedo et al. 2026).",
+  "src": "Azevedo et al. (2026); Ballabio et al. (2025)"
+ },
+ {
+  "order": 4,
+  "mu": "FMA IIb",
+  "country": "Brazil",
+  "name": "Southern São Paulo, Paraná and Santa Catarina",
+  "range": "Southern São Paulo to Santa Catarina (limits as in Cunha et al. 2020)",
+  "note": "Includes the Paraná coast. Limits between IIa and IIb follow Cunha et al. (2014, 2020).",
+  "src": "Cunha et al. (2014, 2020)"
+ },
+ {
+  "order": 5,
+  "mu": "FMA II Babitonga",
+  "country": "Brazil",
+  "name": "Babitonga Bay",
+  "range": "Babitonga Bay, northern Santa Catarina (26°02′–26°28′S)",
+  "note": "The only population resident year-round in an estuary; recognised as a distinct management unit.",
+  "src": "Cremer & Simões-Lopes (2008); CMS Concerted Action 14.5 (2024)"
+ },
+ {
+  "order": 6,
+  "mu": "FMA III",
+  "country": "Brazil; Uruguay",
+  "name": "Rio Grande do Sul and Uruguay",
+  "range": "Rio Grande do Sul (Brazil) and Uruguay, including the Río de la Plata estuary",
+  "note": "Highest bycatch levels recorded; population structure within the Río de la Plata to be redefined (RES-1.1).",
+  "src": "Secchi et al. (2003); CMS Concerted Action 14.5 (2024)"
+ },
+ {
+  "order": 7,
+  "mu": "FMA IVa",
+  "country": "Argentina",
+  "name": "Argentina, FMA IVa",
+  "range": "Argentina (limits as in Cunha et al. 2020)",
+  "note": "No abundance survey reported; Samborombón Bay not yet flown (CMS COP15 Doc.31.3.7).",
+  "src": "Cunha et al. (2020); CMS COP15 Doc.31.2.8"
+ },
+ {
+  "order": 8,
+  "mu": "FMA IVb",
+  "country": "Argentina",
+  "name": "Argentina, FMA IVb",
+  "range": "Buenos Aires Province (limits as in Cunha et al. 2020)",
+  "note": "Surveyed from the air in 2019–2022 (Crespo et al. 2026).",
+  "src": "Crespo et al. (2026)"
+ },
+ {
+  "order": 9,
+  "mu": "FMA IVc",
+  "country": "Argentina",
+  "name": "Argentina, FMA IVc",
+  "range": "Buenos Aires Province (limits as in Cunha et al. 2020)",
+  "note": "Surveyed from the air in 2019–2022 (Crespo et al. 2026).",
+  "src": "Crespo et al. (2026)"
+ },
+ {
+  "order": 10,
+  "mu": "FMA IVd",
+  "country": "Argentina",
+  "name": "Argentina, FMA IVd",
+  "range": "Southern Buenos Aires (limits as in Cunha et al. 2020)",
+  "note": "Area from Claromecó to Bahía Blanca not yet surveyed (CMS COP15 Doc.31.3.7).",
+  "src": "CMS COP15 Doc.31.3.7"
+ },
+ {
+  "order": 11,
+  "mu": "FMA IVe",
+  "country": "Argentina",
+  "name": "Argentina, FMA IVe",
+  "range": "Southern limit at the north coast of San Matías Gulf (42°10′S), including the Río Negro estuary",
+  "note": "Río Negro estuary proposed as a conservation area (MIT 2.1).",
+  "src": "CMS Concerted Action 14.5 (2024)"
+ }
+]

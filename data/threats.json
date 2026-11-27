@@ -1,0 +1,74 @@
+[
+ {
+  "threat": "Bycatch in gillnets",
+  "kind": "Fisheries",
+  "role": "Main threat",
+  "evidence": "Bottom-set gillnets are by far the greatest threat, in artisanal and industrial fisheries throughout the range. Fishing-related mortality ranges from about 100 (FMA I) to more than 1,000 a year (FMA III), from about 2 to more than 5 times the PBR-based sustainable limit.",
+  "where": "All FMAs; highest in FMA III",
+  "actions": "MON-1.1; MON-1.2; MON-1.3; MON-1.8; MIT-1.1; MIT-1.2; MIT-3.1",
+  "refs": "Secchi et al. (2021); CMS CA 14.5"
+ },
+ {
+  "threat": "Bycatch in trawl fisheries",
+  "kind": "Fisheries",
+  "role": "Other threat",
+  "evidence": "Occasional captures in coastal and industrial bottom trawls, including the Río de la Plata.",
+  "where": "FMA III; FMA IV",
+  "actions": "MON-1.1; MON-1.2; MIT-1.2",
+  "refs": "Cappozzo et al. (2007); Franco-Trecu et al. (2019)"
+ },
+ {
+  "threat": "Chemical pollution",
+  "kind": "Pollution",
+  "role": "Other threat",
+  "evidence": "Organochlorines, PBDEs, dechloranes, pyrethroids, UV filters, mercury, cadmium and other trace elements recorded in tissues across the range.",
+  "where": "All FMAs",
+  "actions": "MON-2.2",
+  "refs": "Alonso et al. (2012); Leonel et al. (2010, 2014); Dorneles et al. (2007, 2013)"
+ },
+ {
+  "threat": "Marine debris",
+  "kind": "Pollution",
+  "role": "Other threat",
+  "evidence": "Plastic ingestion documented in Argentina and Brazil.",
+  "where": "FMA I; FMA IV",
+  "actions": "MON-2.2",
+  "refs": "Denuncio et al. (2011); Di Beneditto & Ramos (2014)"
+ },
+ {
+  "threat": "Habitat degradation and mining waste",
+  "kind": "Habitat",
+  "role": "Other threat",
+  "evidence": "The 2015 Doce River mining dam collapse affected the habitat of the isolated FMA Ia population.",
+  "where": "FMA Ia",
+  "actions": "MIT-2.1; MON-2.2",
+  "refs": "Barreto et al. (2024, 2026)"
+ },
+ {
+  "threat": "Underwater noise and coastal development",
+  "kind": "Habitat",
+  "role": "Other threat",
+  "evidence": "Ports, dredging and vessel traffic in Babitonga Bay; proposed offshore wind farm areas overlap franciscana habitat in southern Brazil.",
+  "where": "II Babitonga; FMA III",
+  "actions": "MIT-2.2; MIT-2.3",
+  "refs": "Paitach et al. (2023); Ribeiro et al. (2026)"
+ },
+ {
+  "threat": "Depletion of prey and climate change",
+  "kind": "Ecosystem",
+  "role": "Other threat",
+  "evidence": "Listed among the other threats in the 2021 synthesis; impacts not quantified.",
+  "where": "All FMAs",
+  "actions": "MON-1.9",
+  "refs": "Secchi et al. (2021)"
+ },
+ {
+  "threat": "Use of carcasses",
+  "kind": "Direct use",
+  "role": "Other threat",
+  "evidence": "Historical use of bycaught animals as bait, food or oil (Atafona, Rio Grande do Sul, Paraná, Uruguay; \"mushame\" in Argentina). No intentional kills reported.",
+  "where": "FMA Ib; FMA IIb; FMA III; FMA IV",
+  "actions": "PAC-1.1",
+  "refs": "CMS CA 14.5; Di Beneditto & Ramos (2001)"
+ }
+]

@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franciscana CMP Dashboard</title>
+<meta name="description" content="Evidence and assessment dashboard supporting the IWC Conservation Management Plan for the franciscana dolphin (toninha), Pontoporia blainvillei.">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<main id="dash-root">
+<div class="gd" id="top">
+
+<header class="gd-head gd-hero">
+  <div class="gd-hero-text">
+  <p class="gd-kicker">Conservation Management Plan · <i>Pontoporia blainvillei</i></p>
+  <h1 class="gd-title" id="title">Franciscana dolphin (toninha): evidence and assessment dashboard</h1>
+  <p class="gd-lede" id="lede">The franciscana, known in Brazil as toninha, is assessed as <b data-draw="g_cat" data-source="kpi" data-field="global_cat" data-row="0">—</b> globally (IUCN, <span data-draw="g_year" data-source="kpi" data-field="global_year" data-row="0">—</span>) and as <b data-draw="n_cat" data-source="kpi" data-field="national_cat" data-row="0">—</b> in Brazil (<span data-draw="n_year" data-source="kpi" data-field="national_year" data-row="0">—</span>). Abundance estimates were found for <b data-draw="l_est" data-source="kpi" data-field="n_mus_est" data-row="0">—</b> of its <span data-draw="l_mus" data-source="kpi" data-field="n_mus" data-row="0">—</span> management areas; the IWC plan lists <b data-draw="l_act" data-source="kpi" data-field="n_actions" data-row="0">—</b> actions, and <b data-draw="l_need" data-source="kpi" data-field="n_ca_needed" data-row="0">—</b> of the <span data-draw="l_ca" data-source="kpi" data-field="n_ca" data-row="0">—</span> activities of the renewed CMS Concerted Action still need funds.</p>
+  <div class="gd-hero-badge"><span class="gd-aka">Franciscana</span><span class="gd-aka">Toninha (Brazil)</span><span class="gd-aka">Franciscana / delfín del Plata (Argentina, Uruguay)</span><span class="gd-aka">La Plata dolphin</span></div>
+  </div>
+  <figure class="gd-hero-fig" id="cover-photo">
+    <img class="gd-hero-img gd-hero-photo" src="assets/franciscanas_sucunza.jpg" alt="Aerial view of five franciscanas (Pontoporia blainvillei) swimming at the surface of dark blue water; their long, slender beaks are clearly visible." width="1200" height="800">
+    <figcaption class="gd-hero-cap">Franciscanas, <i>Pontoporia blainvillei</i>, seen from the air. Photo: Federico Sucunza.</figcaption>
+  </figure>
+</header>
+
+<nav class="gd-nav" aria-label="Sections">
+  <a href="#overview" data-go="overview">At a glance</a>
+  <a href="#units" data-go="units">Population</a>
+  <a href="#range" data-go="range">Range map</a>
+  <a href="#threats" data-go="threats">Threats</a>
+  <a href="#actions" data-go="actions">Action plan</a>
+  <a href="#cms" data-go="cms">CMS Concerted Action</a>
+  <a href="#status" data-go="status">Conservation status</a>
+  <a href="#process" data-go="process">Range states and process</a>
+  <a href="#protected-areas" data-go="protected-areas">Protected areas</a>
+  <a href="#legal" data-go="legal">Legal instruments</a>
+  <a href="#literature" data-go="literature">Literature</a>
+  <a href="#evidence" data-go="evidence">Evidence by action</a>
+  <a href="#updating" data-go="updating">Updating</a>
+  <a href="#notes" data-go="notes">Editorial notes</a>
+  <a href="#references" data-go="references">References</a>
+</nav>
+
+<section class="gd-sec" id="overview">
+  <h2 class="gd-h2">At a glance</h2>
+  <p class="gd-sub">A graphical summary of the sections below. Each panel opens the section it summarises; point at a mark for details.</p>
+  <div class="ov-grid">
+    <div class="ov-card" data-go="status" role="link" tabindex="0" aria-label="Open the conservation status section">
+      <p class="ov-k">Conservation status</p>
+      <p class="ov-big"><span data-draw="ov_g" data-source="kpi" data-field="global_cat" data-row="0">—</span> <span class="ov-arrow">→</span> <span data-draw="ov_n" data-source="kpi" data-field="national_cat" data-row="0">—</span></p>
+      <p class="ov-s">IUCN global category, then Brazil's national list. The FMA Ia population was assessed independently as Endangered.</p>
+      <div class="gd-chart ov-viz" data-draw="ov_status_viz" data-source="status" id="ov-status"></div>
+    </div>
+    <div class="ov-card" data-go="units" role="link" tabindex="0" aria-label="Open the population section">
+      <p class="ov-k">Management areas</p>
+      <p class="ov-big"><span data-draw="ov_est" data-source="kpi" data-field="n_mus_est" data-row="0">—</span><span class="ov-of"> of <span data-draw="ov_mus" data-source="kpi" data-field="n_mus" data-row="0">—</span></span></p>
+      <p class="ov-s">Franciscana Management Areas (FMAs) have an abundance estimate in the sources reviewed; dashed squares have none.</p>
+      <div class="gd-chart ov-viz" data-draw="ov_mu_viz" data-source="mu_cov" id="ov-units"></div>
+    </div>
+    <div class="ov-card" data-go="threats" role="link" tabindex="0" aria-label="Open the threats section">
+      <p class="ov-k">Threats</p>
+      <p class="ov-s">Bycatch in gillnets is the main threat throughout the range; mortality exceeds sustainable limits in every area assessed.</p>
+      <ul class="ov-list" data-draw="ov_thr_list" data-source="threats" id="ov-threat-list"></ul>
+    </div>
+    <div class="ov-card" data-go="actions" role="link" tabindex="0" aria-label="Open the action plan section">
+      <p class="ov-k">IWC CMP actions</p>
+      <p class="ov-big"><span data-draw="ov_act" data-source="kpi" data-field="n_actions" data-row="0">—</span></p>
+      <p class="ov-s">actions in four strategic lines; <span data-draw="ov_low" data-source="evid_stats" data-field="n_low" data-row="0">—</span> of those measured have fewer than 10 PubMed records (orange outline).</p>
+      <div class="gd-chart ov-viz" data-draw="ov_act_viz" data-source="actions evidence_counts" id="ov-actions"></div>
+    </div>
+    <div class="ov-card" data-go="cms" role="link" tabindex="0" aria-label="Open the CMS Concerted Action section">
+      <p class="ov-k">CMS Concerted Action 2026–2029</p>
+      <p class="ov-big"><span data-draw="ov_need" data-source="ca_stats" data-field="needed" data-row="0">—</span><span class="ov-of"> of <span data-draw="ov_ca" data-source="ca_stats" data-field="n" data-row="0">—</span></span></p>
+      <p class="ov-s">planned activities are stated as needing funds (outlined squares).</p>
+      <div class="gd-chart ov-viz" data-draw="ov_ca_viz" data-source="cms_activities" id="ov-ca"></div>
+    </div>
+    <div class="ov-card" data-go="literature" role="link" tabindex="0" aria-label="Open the literature section">
+      <p class="ov-k">Literature (PubMed)</p>
+      <p class="ov-big"><span data-draw="ov_lit" data-source="lit_stats" data-field="total" data-row="0">—</span></p>
+      <p class="ov-s">records name the species; bars show records per year since 2000.</p>
+      <div class="gd-chart ov-viz" data-draw="ov_lit_viz" data-source="pubmed_years" id="ov-lit"></div>
+    </div>
+  </div>
+</section>
+
+<section class="gd-sec" id="units">
+  <h2 class="gd-h2">Population structure and abundance</h2>
+  <p class="gd-sub">Eleven management units are recognised by the IWC Scientific Committee: ten subdivisions of the four original Franciscana Management Areas plus Babitonga Bay (Cunha et al. 2020; IWC 2023). The northern population (FMA Ia) belongs to the subspecies <i>P. b. pukusi</i>; the rest are <i>P. b. blainvillei</i>. Study-level abundance estimates are shown on a logarithmic scale.</p>
+  <div class="gd-card">
+    <div class="gd-chart" id="abundance-chart" data-draw="chart_abund" data-source="abundance mus">—</div>
+    <p class="gd-note">Horizontal axis: estimated number of individuals (logarithmic scale). Estimates differ in method, survey area and year and must not be summed. Units with no estimate in the sources reviewed: <span data-draw="gap_list" data-source="kpi" data-field="gap_mus" data-row="0">—</span>. Values for FMA Ib, Babitonga and FMA III marked “national assessment” are compiled in the SALVE/ICMBio assessment (Sucunza et al. 2025), whose summary does not name the original surveys.</p>
+  </div>
+  <h3 class="gd-h3">Management units and evidence coverage</h3>
+  <div class="gd-wrap">
+    <table class="gd-table" id="units-table" data-source="mu_cov" data-row-key="mu">
+      <thead><tr><th data-field="mu">Unit</th><th data-field="country">Country</th><th data-field="range">Range</th><th data-field="n_est">Estimates</th><th>Values reported</th><th data-field="note">Remarks</th></tr></thead>
+      <tbody data-draw="units_body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="gd-sec" id="range">
+  <h2 class="gd-h2">Range and places named in the plan</h2>
+  <p class="gd-sub">The franciscana lives in coastal waters, mostly inside the 30–50 m isobath, from Itaúnas (18°25′S, Espírito Santo) to the north coast of the San Matías Gulf (42°10′S, Argentina). Numbered markers show places named in the CMP actions and the CMS documents.</p>
+  <div class="gd-legend" id="range-legend">
+    <span><i class="gd-sw rng"></i>Approximate coastal range (Itaúnas to San Matías Gulf)</span>
+    <span><i class="gd-sw dot"></i>Locality named in the plan</span>
+    <span><i class="gd-sw rs"></i>Range state</span>
+  </div>
+  <div class="gd-chart gd-map" id="range-map" data-draw="range_map" data-source="map_base map_layers"></div>
+  <p class="gd-note">Coastline and borders: Natural Earth 1:50m. The range line follows the mainland coast between the two limits and does not show gaps within it, such as the gaps between FMAs Ia, Ib and IIa. Marker positions are approximate. IMMA boundaries are not shown, because the IUCN IMMA dataset was not available in this session.</p>
+  <div class="gd-wrap">
+    <table class="gd-table" id="places-table">
+      <thead><tr><th>No.</th><th>Place</th><th>Relevance</th></tr></thead>
+      <tbody data-draw="places_body" data-source="map_layers"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="gd-sec" id="threats">
+  <h2 class="gd-h2">Threats</h2>
+  <p class="gd-sub">Threats as described in the CMS Concerted Action and the 2021 synthesis by Secchi et al., with the CMP actions that address each one. The link between threats and actions is proposed here and is not stated in the plan.</p>
+  <div class="gd-wrap">
+    <table class="gd-table" id="threats-table" data-source="threat_cov" data-row-key="threat">
+      <thead><tr><th data-field="threat">Threat</th><th data-field="kind">Type</th><th data-field="role">Standing</th><th data-field="evidence">Evidence of impact</th><th data-field="where">Areas</th><th data-field="n_actions">Linked actions</th></tr></thead>
+      <tbody data-draw="threat_body"></tbody>
+    </table>
+  </div>
+  <p class="gd-note">No threat scoring forms (IUCN–CMP overall or fisheries forms) were available for the franciscana; if they exist, they can be added as in the Guiana dolphin dashboard.</p>
+</section>
+
+<section class="gd-sec" id="actions">
+  <h2 class="gd-h2">IWC Conservation Management Plan: actions</h2>
+  <p class="gd-sub">The IWC adopted the Franciscana CMP in 2016, its first for a small cetacean. Its actions, as reproduced in CMS Concerted Action 14.5 (2024) for the 2022–2026 update, fall into four strategic lines. That list gives regions but not priorities, years or budgets. Bars are split by the amount of indexed evidence for each action.</p>
+  <div class="gd-card">
+    <div class="gd-chart" id="actions-chart" data-draw="chart_actions" data-source="actions_by actions evidence_counts">—</div>
+  </div>
+  <div class="gd-controls">
+    <label>Strategic line <select class="dash-select" data-draw="f_a_line" data-source="actions" aria-label="Filter actions by strategic line"></select></label>
+    <label>Search <input class="gd-input" type="search" data-param="a_q" placeholder="Identifier, topic or title" aria-label="Search actions by identifier, topic or title"></label>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="actions-table" data-source="actions" data-row-key="id">
+      <thead><tr><th data-field="id">Action</th><th data-field="line">Strategic line</th><th data-field="topic">Topic</th><th data-field="title">Description</th><th data-field="region">Region</th><th>PubMed records</th></tr></thead>
+      <tbody data-draw="actions_body"></tbody>
+    </table>
+  </div>
+  <p class="gd-note">n/m = not measured by a literature count (cooperation, vessel monitoring and diplomatic actions).</p>
+</section>
+
+<section class="gd-sec" id="cms">
+  <h2 class="gd-h2">CMS Concerted Action for the franciscana</h2>
+  <p class="gd-sub">Argentina, Brazil and Uruguay proposed a Concerted Action under the Convention on Migratory Species, adopted at COP14 (Samarkand, February 2024) and renewed at COP15 (Campo Grande, March 2026) for 2026–2029. It is designed to complement the IWC CMP. The estimated cost for the three years is USD 500,000–800,000.</p>
+  <p class="gd-p">The renewed Concerted Action lists <b data-draw="c_n" data-source="ca_stats" data-field="n" data-row="0">—</b> activities; <b data-draw="c_need" data-source="ca_stats" data-field="needed" data-row="0">—</b> are stated as needing funds and <b data-draw="c_id" data-source="ca_stats" data-field="identified" data-row="0">—</b> has a funding source identified.</p>
+  <h3 class="gd-h3">Planned activities, 2026–2029</h3>
+  <div class="gd-wrap">
+    <table class="gd-table" id="ca-table" data-source="cms_activities" data-row-key="activity">
+      <thead><tr><th data-field="activity">Activity</th><th data-field="result">Expected result</th><th data-field="timeframe">Time frame</th><th data-field="responsibility">Responsibility</th><th data-field="funding">Funding</th><th data-field="cmp">Related CMP actions</th></tr></thead>
+      <tbody data-draw="ca_body"></tbody>
+    </table>
+  </div>
+  <p class="gd-note">Related CMP actions are a correspondence proposed here and are not stated in the CMS document.</p>
+  <h3 class="gd-h3">Implementation report to COP15 (October 2025)</h3>
+  <div class="gd-wrap">
+    <table class="gd-table" id="progress-table" data-source="cms_progress" data-row-key="activity">
+      <thead><tr><th data-field="activity">Activity</th><th data-field="status">Status</th><th data-field="progress">Progress</th><th data-field="difficulties">Difficulties</th></tr></thead>
+      <tbody data-draw="prog_body"></tbody>
+    </table>
+  </div>
+  <h3 class="gd-h3">CMS resolutions addressing the main threats</h3>
+  <p class="gd-note">Resolutions named in the renewal proposal (and, for aquatic wild meat, in the 2024 Concerted Action) as addressing the threats to the species.</p>
+  <div class="gd-wrap">
+    <table class="gd-table" id="instruments-table" data-source="instruments" data-row-key="ref,title">
+      <thead><tr><th data-field="ref">Reference</th><th data-field="title">Title</th><th data-field="theme">Theme</th><th data-field="source">Cited in</th></tr></thead>
+      <tbody data-draw="instr_body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="gd-sec" id="status">
+  <h2 class="gd-h2">Conservation status</h2>
+  <p class="gd-sub">Global IUCN assessments, an independent assessment of the FMA Ia population and the national lists of the range states. The species is listed in Appendices I and II of the CMS. Where a category could not be confirmed it is shown as T.</p>
+  <div class="gd-card">
+    <div class="gd-chart" id="status-chart" data-draw="chart_status" data-source="status">—</div>
+    <p class="gd-note">n.d. = year not recorded in the source. Lines join successive assessments within the same jurisdiction.</p>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="status-table" data-source="status">
+      <thead><tr><th>Jurisdiction</th><th>Year</th><th>Category</th><th>Criteria</th><th>Source</th></tr></thead>
+      <tbody data-draw="status_body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="gd-sec" id="process">
+  <h2 class="gd-h2">Range states and process</h2>
+  <p class="gd-sub">The three range states, their FMAs, their relationship to the IWC and CMS and the national instruments relevant to the species, followed by the main steps of the CMP and Concerted Action process.</p>
+  <div class="gd-wrap">
+    <table class="gd-table" id="states-table" data-source="states" data-row-key="country">
+      <thead><tr><th data-field="country">Country</th><th data-field="fmas">FMAs</th><th data-field="iwc">IWC</th><th data-field="cms">CMS</th><th data-field="instruments">Relevant instruments</th></tr></thead>
+      <tbody data-draw="states_body"></tbody>
+    </table>
+  </div>
+  <h3 class="gd-h3">Milestones, 2003–2029</h3>
+  <ul class="gd-tl" id="timeline" data-draw="timeline" data-source="milestones"></ul>
+  <p class="gd-note">Hollow markers denote planned steps.</p>
+</section>
+
+<section class="gd-sec" id="protected-areas">
+  <h2 class="gd-h2">Protected areas within the franciscana’s range</h2>
+  <p class="gd-sub">Protected areas (and one proposed area) in Brazil, Uruguay and Argentina that overlap the species’ coastal range, and whether their official documents name the franciscana or toninha. For each area, the creation act and, where available, the management plan or related official documents were downloaded and searched for “toninha”, “franciscana”, “Pontoporia”, “delfín del Plata” and “delfín de río”. Where an official text could not be retrieved, this is stated and the evidence is marked as secondary.</p>
+  <p class="gd-p">Of <b data-draw="pa_n" data-source="pa_stats" data-field="n_pa" data-row="0">—</b> areas reviewed (<span data-draw="pa_created" data-source="pa_stats" data-field="n_created" data-row="0">—</span> created), the species is named in an official document for <b data-draw="pa_official" data-source="pa_stats" data-field="n_official" data-row="0">—</b>: in the creation act or its official announcement for <b data-draw="pa_act" data-source="pa_stats" data-field="n_act" data-row="0">—</b> (the Albardão national park and APA, created in March 2026), and otherwise in management plans, official area documents or the PAN Toninha. For <b data-draw="pa_none" data-source="pa_stats" data-field="n_none" data-row="0">—</b>, the acts checked do not name it at all. Creation decrees rarely name species: in Uruguay none of the decrees checked does, although the franciscana occurs in these areas.</p>
+  <div class="gd-card">
+    <div class="gd-chart" id="pa-chart" data-draw="chart_pa" data-source="pa_by">—</div>
+  </div>
+  <div class="gd-controls">
+    <label>Country <select class="dash-select" data-draw="f_pa_country" data-source="protected_areas" aria-label="Filter protected areas by country"></select></label>
+    <label>Evidence <select class="dash-select" data-draw="f_pa_cit" data-source="protected_areas" aria-label="Filter protected areas by where the species is named"></select></label>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="pa-table" data-source="protected_areas" data-row-key="name">
+      <thead><tr><th data-field="country">Country</th><th data-field="name">Protected area</th><th data-field="category">Category</th><th data-field="act">Creation act</th><th data-field="fma">FMA</th><th data-field="citation">Species named in</th><th data-field="evidence">Evidence</th><th data-field="verification">Verification</th></tr></thead>
+      <tbody data-draw="pa_body"></tbody>
+    </table>
+  </div>
+  <p class="gd-note">The list is not exhaustive: it covers areas named in the PAN Toninha, the CMS documents, the national species sheets and protected-area databases, and areas such as other coastal APAs, estuaries and municipal reserves may also overlap the range. “Act not checked” marks creation acts recorded from reference sources without reading the official text. Overlap is stated from the documents and the species’ range, not from a spatial analysis; a GIS overlay of the FMA boundaries with the national protected-area databases (CNUC, SNAP, SIFAP) would quantify it. The IUCN IMMA dataset, still to be supplied, would add the Important Marine Mammal Areas.</p>
+</section>
+
+<section class="gd-sec" id="legal">
+  <h2 class="gd-h2">Legal instruments that name the species</h2>
+  <p class="gd-sub">Laws, decrees, ordinances, resolutions and plans in Brazil, Argentina and Uruguay that name Pontoporia blainvillei or its common names (toninha, franciscana, delfín del Plata, delfín de río), with what each says about the species. Each entry gives the date, its current status where known, and whether the official text was read.</p>
+  <p class="gd-p">The table lists <b data-draw="lg_n" data-source="pa_stats" data-field="n_legal" data-row="0">—</b> national, state, provincial or departmental instruments; the official text was read for <b data-draw="lg_read" data-source="pa_stats" data-field="n_legal_read" data-row="0">—</b>. Argentina has the only species-specific laws found: Río Negro declared the franciscana a protected species (2010) and Buenos Aires a natural monument (2017). In Brazil the species is named in threatened-species lists, the two cycles of the PAN Toninha and the Albardão creation; no law or decree naming it was found in Uruguay, where it appears in a departmental protected-area plan and in technical priority lists.</p>
+  <div class="gd-card">
+    <div class="gd-chart" id="legal-chart" data-draw="chart_legal" data-source="legal_instruments">—</div>
+  </div>
+  <div class="gd-controls">
+    <label>Country <select class="dash-select" data-draw="f_lg_country" data-source="legal_instruments" aria-label="Filter legal instruments by country"></select></label>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="legal-table" data-source="legal_instruments" data-row-key="instrument">
+      <thead><tr><th data-field="country">Country</th><th data-field="level">Level</th><th data-field="instrument">Instrument</th><th data-field="date">Date</th><th data-field="kind">Type</th><th data-field="says">What it says about the species</th><th data-field="category">Category</th><th data-field="status">Status</th><th data-field="verification">Verification</th></tr></thead>
+      <tbody data-draw="legal_body"></tbody>
+    </table>
+  </div>
+  <p class="gd-note">Not found: a federal law creating the “Dia Nacional da Toninha” (1 October is observed since 2019 by decision of a PAN workshop, not by law); a 3rd cycle of the PAN Toninha after September 2024; a regulation of Buenos Aires Ley 14.992. Not verified: whether IN MPA/MMA 12/2012 names the species, and the state lists of Paraná, Santa Catarina and Rio de Janeiro. Threatened-species lists of other Brazilian states and the Uruguayan red list should be added once their texts are checked.</p>
+</section>
+
+<section class="gd-sec" id="literature">
+  <h2 class="gd-h2">Scientific literature</h2>
+  <p class="gd-sub">PubMed was searched for Pontoporia, franciscana dolphin(s), franciscanas, toninha and toninhas in titles and abstracts. PubMed indexes few regional and Portuguese- or Spanish-language journals, so PubMed counts are a lower bound. OpenAlex, an open index that also covers regional journals, theses and book chapters, is shown alongside, as is SciSpace.</p>
+  <p class="gd-p">OpenAlex lists <b data-draw="o_total" data-source="lit_stats" data-field="oa_total" data-row="0">—</b> works naming the species since <span data-draw="o_first" data-source="lit_stats" data-field="oa_first" data-row="0">—</span>, with a peak of <b data-draw="o_peak_n" data-source="lit_stats" data-field="oa_peak_n" data-row="0">—</b> in <span data-draw="o_peak_year" data-source="lit_stats" data-field="oa_peak_year" data-row="0">—</span>. PubMed lists <b data-draw="p_total" data-source="lit_stats" data-field="total" data-row="0">—</b> records since <span data-draw="p_first" data-source="lit_stats" data-field="first_year" data-row="0">—</span>, <b data-draw="p_2011" data-source="lit_stats" data-field="since2011" data-row="0">—</b> of them from 2011 onwards. The peak was <b data-draw="p_peak_n" data-source="lit_stats" data-field="peak_n" data-row="0">—</b> in <span data-draw="p_peak_year" data-source="lit_stats" data-field="peak_year" data-row="0">—</span>; <b data-draw="p_last_n" data-source="lit_stats" data-field="last_n" data-row="0">—</b> appeared in <span data-draw="p_last_year" data-source="lit_stats" data-field="last_year" data-row="0">—</span> and <b data-draw="p_part_n" data-source="lit_stats" data-field="partial_n" data-row="0">—</b> so far in <span data-draw="p_part_year" data-source="lit_stats" data-field="partial_year" data-row="0">—</span>.</p>
+  <div class="gd-card">
+    <div class="gd-chart" id="literature-chart" data-draw="chart_lit" data-source="pubmed_years lit_years">—</div>
+  </div>
+
+  <div class="gd-card gd-dl" id="literature-download">
+    <h3 class="gd-h3 ov-flow-h">Download the literature lists</h3>
+    <div class="gd-controls">
+      <label>List <select class="dash-select" data-lit-which aria-label="Choose the literature list to download">
+        <option value="all">All lists</option>
+        <option value="records">PubMed records behind the evidence counts</option>
+        <option value="recent">Most recent PubMed records</option>
+        <option value="scispace">SciSpace records</option>
+        <option value="openalex">OpenAlex records not in PubMed</option>
+        <option value="cited">Most-cited works</option>
+      </select></label>
+      <button type="button" class="gd-more" data-lit-dl="csv">CSV</button>
+      <button type="button" class="gd-more" data-lit-dl="pdf">PDF</button>
+      <span class="gd-note" data-draw="lit_dl" data-source="pubmed_live scispace_live most_cited pubmed_records" aria-live="polite"></span>
+    </div>
+    <p class="gd-note">Personal-data protection (LGPD, Lei nº 13.709/2018): in these tables and downloads each publication is identified by year, title, journal and DOI or PubMed link, and authorship is shown only as the first author’s surname followed by “et al.”. Full author names, affiliations, e-mail addresses and other personal data are not stored or exported. The downloads list bibliographic records only; they do not include the articles themselves, which remain with their publishers.</p>
+  </div>
+
+  <h3 class="gd-h3">Most recent PubMed records (live)</h3>
+  <p class="gd-note">Retrieved live from the PubMed E-utilities API (NCBI) each time the page is opened.</p>
+  <div class="gd-wrap">
+    <table class="gd-table" id="pubmed-table" data-source="pubmed_live" data-row-key="title">
+      <thead><tr><th data-field="date">Date</th><th data-field="first_author">First author</th><th data-field="title">Title</th><th data-field="journal">Journal</th><th>Link</th></tr></thead>
+      <tbody data-draw="pm_body"></tbody>
+    </table>
+  </div>
+
+  <h3 class="gd-h3">Recent records from SciSpace (snapshot of 15 November 2026)</h3>
+  <p class="gd-note">A snapshot of a SciSpace search run on 15 November 2026: up to one hundred of the newest records since 2015 for a question on franciscana conservation, abundance and threats. Only records naming Pontoporia, the franciscana or the toninha are kept. Records from 2025 onwards are listed; earlier ones open on request or by choosing a year. Themes come from keywords and are an aid to browsing, not a classification.</p>
+  <div class="gd-controls">
+    <label>Year <select class="dash-select" data-draw="f_sci_year" data-source="scispace_live" aria-label="Filter SciSpace records by year"></select></label>
+    <label>Theme <select class="dash-select" data-draw="f_sci_theme" data-source="scispace_live" aria-label="Filter SciSpace records by theme"></select></label>
+    <span class="gd-note" data-draw="sci_count" data-source="scispace_live">—</span>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="scispace-table" data-source="scispace_live" data-row-key="title">
+      <thead><tr><th data-field="year">Year</th><th data-field="first_author">First author</th><th data-field="title">Title</th><th data-field="venue">Venue</th><th data-field="theme">Theme</th><th data-field="citations">Citations</th><th>Link</th></tr></thead>
+      <tbody data-draw="sci_body"></tbody>
+    </table>
+  </div>
+  <button type="button" class="gd-more" data-draw="sci_more" data-source="scispace_live" aria-controls="scispace-table"></button>
+
+  <h3 class="gd-h3">Most-cited works</h3>
+  <p class="gd-note">The most-cited works in the OpenAlex snapshot of 27 November 2026; citation counts are those of OpenAlex. This file can be replaced by a Scopus or Web of Science export.</p>
+  <div class="gd-wrap">
+    <table class="gd-table" id="cited-table" data-source="most_cited" data-row-key="title">
+      <thead><tr><th data-field="year">Year</th><th data-field="first_author">First author</th><th data-field="title">Title</th><th data-field="journal">Journal</th><th data-field="citations">Citations</th><th>Link</th></tr></thead>
+      <tbody data-draw="cited_body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="gd-sec" id="evidence">
+  <h2 class="gd-h2">Evidence available for each CMP action</h2>
+  <p class="gd-sub">The number of records naming the species that match a topic defined for each CMP action. PubMed (snapshot of 15 November 2026) and OpenAlex (27 November 2026) are combined so that each document is counted once: OpenAlex records already in PubMed (same PMID, DOI or title) are not added. Topics are matched from keywords in the title (and, for PubMed, author keywords and MeSH terms), from specific phrases in the abstract, and, for OpenAlex records in Portuguese or Spanish, from the equivalent terms in those languages. The records behind each count are listed below.</p>
+  <p class="gd-p">Counting each document once, <b data-draw="e_base" data-source="evid_stats" data-field="baseline" data-row="0">—</b> records name the species: <b data-draw="e_basepm" data-source="evid_stats" data-field="base_pm" data-row="0">—</b> in PubMed and a further <b data-draw="e_baseoa" data-source="evid_stats" data-field="base_oa" data-row="0">—</b> in OpenAlex only. The topics of <b data-draw="e_nmeas" data-source="evid_stats" data-field="n_meas" data-row="0">—</b> of the <b data-draw="e_nact" data-source="evid_stats" data-field="n_actions" data-row="0">—</b> actions can be matched. Evidence ranges from <b data-draw="e_lo_n" data-source="evid_stats" data-field="lo_n" data-row="0">—</b> records (<span data-draw="e_lo_id" data-source="evid_stats" data-field="lo_id" data-row="0">—</span>) to <b data-draw="e_hi_n" data-source="evid_stats" data-field="hi_n" data-row="0">—</b> (<span data-draw="e_hi_id" data-source="evid_stats" data-field="hi_id" data-row="0">—</span>). <b data-draw="e_nlow" data-source="evid_stats" data-field="n_low" data-row="0">—</b> actions have fewer than 10 records and <b data-draw="e_nzero" data-source="evid_stats" data-field="n_zero" data-row="0">—</b> have none: <span data-draw="e_lowids" data-source="evid_stats" data-field="low_ids" data-row="0">—</span>. On PubMed alone the number under 10 was <b data-draw="e_nlowpm" data-source="evid_stats" data-field="n_low_pm" data-row="0">—</b>: OpenAlex adds the regional journals and theses where much of the work on bycatch, strandings and mitigation trials is published. Evidence from IWC papers and grey literature is still not counted.</p>
+  <div class="gd-controls">
+    <label>Strategic line <select class="dash-select" data-draw="f_e_line" data-source="actions" aria-label="Filter the evidence by strategic line"></select></label>
+  </div>
+  <div class="gd-card">
+    <div class="gd-chart" id="evidence-chart" data-draw="chart_evid" data-source="evidence_counts">—</div>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="evidence-table" data-source="evidence_counts" data-row-key="id">
+      <thead><tr><th data-field="id">Action</th><th data-field="topic">Topic</th><th data-field="label">Evidence topic</th><th data-field="count_pubmed">PubMed</th><th data-field="count_oa">Added from OpenAlex</th><th data-field="count">Integrated</th><th data-field="rule">Rule</th></tr></thead>
+      <tbody data-draw="evid_body"></tbody>
+    </table>
+  </div>
+  <p class="gd-note">OpenAlex records were kept when their title or abstract names Pontoporia, the toninha or the franciscana dolphin; errata, datasets (other than the SALVE assessment), software and reference entries were excluded, and duplicate versions of the same work were merged. Author names in OpenAlex are not always in surname order, so a few first-author entries may show a given name. A record may match several topics, so counts overlap and must not be added. Keyword rules are a heuristic for review by the CMP coordinators, not a manual classification. Actions RES-2.1, MON-1.4, MON-1.5 and PAC-2.1 are not measured. A low count is a gap in indexed evidence, not an absence of knowledge.</p>
+
+  <div class="gd-card gd-dl" id="evidence-download">
+    <h3 class="gd-h3 ov-flow-h">Download the publications matched to an action</h3>
+    <div class="gd-controls">
+      <label>Action <select class="dash-select" data-draw="f_d_action" data-source="evidence_counts" aria-label="Choose the CMP action whose publications to download"></select></label>
+      <button type="button" class="gd-more" data-evid-dl="csv">CSV</button>
+      <button type="button" class="gd-more" data-evid-dl="pdf">PDF</button>
+      <span class="gd-note" data-draw="evid_dl_count" data-source="pubmed_records oa_records" aria-live="polite"></span>
+      <span class="gd-note" data-draw="evid_dl" data-source="pubmed_records oa_records evidence_counts" aria-live="polite"></span>
+    </div>
+    <p class="gd-note">The file lists the PubMed records and the OpenAlex records (not in PubMed) whose title or abstract matches the action’s topic, with year, first author’s surname followed by “et al.”, title, journal or source, all matched actions and a DOI, PubMed or OpenAlex link. It is a bibliography of the evidence counted here, not the articles themselves; matching is by keywords and should be checked before citing.</p>
+  </div>
+
+  <h3 class="gd-h3">Records behind the counts</h3>
+  <div class="gd-controls">
+    <label>Action <select class="dash-select" data-draw="f_r_action" data-source="evidence_counts" aria-label="Show the records matched to one action"></select></label>
+    <label>Search <input class="gd-input" type="search" data-param="r_q" placeholder="Title word, author or year" aria-label="Search the PubMed records"></label>
+    <span class="gd-note" data-draw="rec_count" data-source="pubmed_records">—</span>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="records-table" data-source="pubmed_records" data-row-key="pmid">
+      <thead><tr><th data-field="year">Year</th><th data-field="first_author">First author</th><th data-field="title">Title</th><th data-field="journal">Journal</th><th data-field="actions">Matched actions</th><th>Link</th></tr></thead>
+      <tbody data-draw="rec_body"></tbody>
+    </table>
+  </div>
+
+  <h3 class="gd-h3">Records added from OpenAlex (not in PubMed)</h3>
+  <p class="gd-note">OpenAlex works that name the species and are not in PubMed, with the actions each was matched to and whether the match rests on the title, the abstract or both. Regional and Portuguese- or Spanish-language journals and theses make up most of them. Records matched to no topic count only towards the total.</p>
+  <div class="gd-controls">
+    <label>Action <select class="dash-select" data-draw="f_o_action" data-source="evidence_counts" aria-label="Show the OpenAlex records matched to one action"></select></label>
+    <label>Search <input class="gd-input" type="search" data-param="o_q" placeholder="Title word, author, source or year" aria-label="Search the OpenAlex records"></label>
+    <span class="gd-note" data-draw="oa_count" data-source="oa_records">—</span>
+  </div>
+  <div class="gd-wrap">
+    <table class="gd-table" id="oa-table" data-source="oa_records" data-row-key="openalex_id">
+      <thead><tr><th data-field="year">Year</th><th data-field="first_author">First author</th><th data-field="title">Title</th><th data-field="source">Source</th><th data-field="type">Type</th><th data-field="actions">Matched actions</th><th data-field="matched_by">Matched on</th><th>Link</th></tr></thead>
+      <tbody data-draw="oa_body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="gd-sec" id="updating">
+  <h2 class="gd-h2">Updating the evidence base</h2>
+  <p class="gd-sub">The page reads its data from the JSON files in the repository’s <code>data/</code> folder; only the most recent PubMed records are fetched live.</p>
+  <div class="gd-card">
+    <ol class="gd-steps">
+      <li><b>IWC CMP and assessment documents.</b> When the IWC Comprehensive Assessment (from 2026) or a revised CMP action table is available, it is transcribed into the data files; the actions, priorities and abundance files are then replaced and the page redraws.</li>
+      <li><b>Direct replacement of a data file.</b> Edit or replace a file in <code>data/</code>, keeping the same field names, and commit; the page redraws from the new file.</li>
+      <li><b>PubMed and SciSpace.</b> The PubMed recent-records table is live; the SciSpace table, the annual series and the counts per action are dated snapshots, regenerated with the scripts in <code>tools/</code>.</li>
+      <li><b>OpenAlex, Scopus and Web of Science.</b> The OpenAlex snapshot (records per year, most-cited works and records added to the counts) can be rerun at any time; it is deduplicated against PubMed by PMID, DOI and title. Scopus and Web of Science exports can replace the most-cited file.</li>
+      <li><b>IMMAs and the PAN Toninha.</b> Supplying the IUCN IMMA dataset and the 2nd-cycle PAN Toninha objectives would add the IMMA map and a PAN evidence table, as in the Guiana dolphin dashboard.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="gd-sec" id="notes">
+  <h2 class="gd-h2">Editorial and consistency notes</h2>
+  <p class="gd-sub">Points where sources differ or data are missing, with what has been applied in this dashboard.</p>
+  <div class="gd-wrap">
+    <table class="gd-table" id="flags-table" data-source="flags" data-row-key="topic">
+      <thead><tr><th data-field="topic">Topic</th><th data-field="status">Status</th><th data-field="issue">Observation</th><th data-field="action">Action needed</th><th data-field="resolution">In the dashboard</th></tr></thead>
+      <tbody data-draw="flags_body"></tbody>
+    </table>
+  </div>
+  <details class="gd-note" id="provenance">
+    <summary>Data provenance and conventions</summary>
+    <p>Management units, actions, threats, activities and milestones were transcribed from UNEP/CMS/Concerted Action 14.5 (2024), its COP15 revision (2026) and COP15 documents Doc.31.2.8 and Doc.31.3.7. Abundance figures come from the abstracts of the cited papers, retrieved through SciSpace, and are reproduced as reported without harmonisation. National listings are as cited in those documents. The literature series and evidence counts are a PubMed snapshot of 15 November 2026. Each source is listed under Sources with its date and basis.</p>
+  </details>
+</section>
+
+<section class="gd-sec gd-refs" id="references">
+  <h2 class="gd-h2">References and credits</h2>
+  <div class="gd-credit" id="credits">
+    <p><b>Dashboard prepared by the Laboratório de Ecologia e Conservação, Universidade Federal do Paraná, Paraná, Brazil.</b></p>
+    <p>Suggested citation: Laboratório de Ecologia e Conservação, Universidade Federal do Paraná (2026). <i>Franciscana dolphin (toninha): evidence and assessment dashboard</i>. Supporting the IWC Conservation Management Plan for <i>Pontoporia blainvillei</i>.</p>
+    <p>Cover photograph: Federico Sucunza.</p>
+  </div>
+  <h3 class="gd-h3">Data sources</h3>
+  <ul class="gd-refs-list" id="data-sources">
+    <li>UNEP/CMS (2024). Concerted Action for the Franciscana Dolphin (<i>Pontoporia blainvillei</i>). UNEP/CMS/Concerted Action 14.5, adopted at COP14, Samarkand. Includes the IWC CMP actions for 2022–2026.</li>
+    <li>UNEP/CMS (2026). Concerted Action 14.5 (Rev.COP15), adopted at COP15, Campo Grande, March 2026.</li>
+    <li>Argentina, Brazil and Uruguay (2025). Report on the implementation of the Concerted Action for the franciscana dolphin. UNEP/CMS/COP15/Doc.31.2.8.</li>
+    <li>Argentina, Brazil and Uruguay (2025). Proposal for the renewal of the Concerted Action for the franciscana dolphin. UNEP/CMS/COP15/Doc.31.3.7.</li>
+    <li>Secchi et al. (2021). A synthesis of the ecology, human-related threats and conservation perspectives for the endangered franciscana dolphin. <i>Frontiers in Marine Science</i> 8: 617956.</li>
+    <li>Sucunza et al. (2023). Distribution, population size and IUCN Red Listing of an isolated population of the threatened franciscana. <i>Endangered Species Research</i>. doi:10.3354/esr01262.</li>
+    <li>Crespo et al. (2026). Abundance estimation of franciscana dolphins by means of aerial surveys in Buenos Aires province, Argentina. <i>Mastozoología Neotropical</i>. doi:10.31687/saremmn.26.33.02.07.e1297.</li>
+    <li>Danilewicz et al. (2010). Abundance estimate for a threatened population of franciscana dolphins in southern coastal Brazil. <i>J. Mar. Biol. Assoc. UK</i> 90: 1649–1657.</li>
+    <li>Secchi et al. (2001). A first estimate of franciscana abundance off southern Brazil. <i>J. Cetacean Res. Manage.</i> 3: 95–100.</li>
+    <li>Cremer &amp; Simões-Lopes (2008). Distribution, abundance and density estimates of franciscanas in Babitonga Bay, southern Brazil. <i>Revista Brasileira de Zoologia</i> 25: 397–402.</li>
+    <li>Cunha et al. (2014). Population structure of the endangered franciscana dolphin: reassessing management units. <i>PLOS ONE</i> 9: e85633; Cunha et al. (2020) as cited in CMS CA 14.5.</li>
+    <li>Brazil, Ministério do Meio Ambiente: Portaria MMA nº 444/2014 and nº 148/2022 (national list of threatened species); ICMBio Portarias nº 91/2010 and nº 655/2019 (PAN Toninha).</li>
+    <li>Sucunza et al. (2020). Distribution, habitat use, and abundance of the endangered franciscana in southeastern and southern Brazil. <i>Marine Mammal Science</i>. doi:10.1111/mms.12650.</li>
+    <li>Sucunza et al. (2025). Ficha de <i>Pontoporia blainvillei</i>. Sistema de Avaliação do Risco de Extinção da Biodiversidade (SALVE), ICMBio. doi:10.37002/salve.ficha.14512.3.</li>
+    <li>Priem et al. (2022). OpenAlex: a fully-open index of scholarly works, authors, venues, institutions, and concepts. arXiv:2205.01833 (openalex.org).</li>
+    <li>Natural Earth (1:50m cultural vectors, world-atlas 2.0.2), public domain, naturalearthdata.com.</li>
+    <li>PubMed, National Center for Biotechnology Information, U.S. National Library of Medicine (pubmed.ncbi.nlm.nih.gov).</li>
+    <li>SciSpace (scispace.com), scholarly search used for abundance abstracts, the recent-records table and citation counts.</li>
+  </ul>
+</section>
+
+<p class="gd-foot">Hover over or touch a chart mark for details. The data behind every figure are the JSON files in the <code>data/</code> folder of the <a href="https://github.com/cadomit/Franciscana_CMP" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>
+</div>
+</main>
+<script src="js/vendor/d3.min.js"></script>
+<script src="js/dash-runtime.js"></script>
+<script src="js/app.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/map.js"></script>
+<script src="js/sci.js"></script>
+<script src="js/overview.js"></script>
+<script src="js/legal.js"></script>
+<script src="js/litdl.js"></script>
+</body>
+</html>

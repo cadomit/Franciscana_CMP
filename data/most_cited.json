@@ -1,0 +1,122 @@
+[
+ {
+  "year": 2013,
+  "first_author": "Gago-Ferrero et al.",
+  "title": "First Determination of UV Filters in Marine Mammals. Octocrylene Levels in Franciscana Dolphins",
+  "journal": "Environmental Science & Technology",
+  "citations": 281,
+  "doi": "https://doi.org/10.1021/es400675y",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2001,
+  "first_author": "Hamilton et al.",
+  "title": "Evolution of river dolphins",
+  "journal": "Proceedings of the Royal Society B Biological Sciences",
+  "citations": 252,
+  "doi": "https://doi.org/10.1098/rspb.2000.1385",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2011,
+  "first_author": "Denuncio et al.",
+  "title": "Plastic ingestion in Franciscana dolphins, Pontoporia blainvillei (Gervais and d’Orbigny, 1844), from Argentina",
+  "journal": "Marine Pollution Bulletin",
+  "citations": 240,
+  "doi": "https://doi.org/10.1016/j.marpolbul.2011.05.003",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2012,
+  "first_author": "Dawson et al.",
+  "title": "To ping or not to ping: the use of active acoustic devices in mitigating interactions between small cetaceans and gillnet fisheries",
+  "journal": "Endangered Species Research",
+  "citations": 199,
+  "doi": "https://doi.org/10.3354/esr00464",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 1998,
+  "first_author": "Crespo et al.",
+  "title": "GROUP SIZE AND DISTRIBUTIONAL RANGE OF THE FRANCISCANA, PONTOPORIA BLAINVILLEI",
+  "journal": "Marine Mammal Science",
+  "citations": 181,
+  "doi": "https://doi.org/10.1111/j.1748-7692.1998.tb00768.x",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 1867,
+  "first_author": "Flower",
+  "title": "IV. Description of the Skeleton of Inia geoffrensis and of the Skull of Pontoporia blainvillii, with Remarks on the Systematic Position of these Animals in the Order Cetacea.",
+  "journal": "The Transactions of the Zoological Society of London",
+  "citations": 174,
+  "doi": "https://doi.org/10.1111/j.1096-3642.1867.tb00572.x",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2023,
+  "first_author": "Secchi et al.",
+  "title": "Applying the phylogeographic concept to identify franciscana dolphin stocks: implications to meet management objectives",
+  "journal": "The journal of cetacean research and management. Special issue",
+  "citations": 160,
+  "doi": "https://doi.org/10.47536/jcrm.v5i1.827",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2002,
+  "first_author": "Bordino et al.",
+  "title": "REDUCING INCIDENTAL MORTALITY OF FRANCISCANA DOLPHINPONTOPORIA BLAINVILLEIWITH ACOUSTIC WARNING DEVICES ATTACHED TO FISHING NETS",
+  "journal": "Marine Mammal Science",
+  "citations": 156,
+  "doi": "https://doi.org/10.1111/j.1748-7692.2002.tb01076.x",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2010,
+  "first_author": "Mendez et al.",
+  "title": "Isolation by environmental distance in mobile marine species: molecular ecology of franciscana dolphins at their southern range",
+  "journal": "Molecular Ecology",
+  "citations": 150,
+  "doi": "https://doi.org/10.1111/j.1365-294x.2010.04647.x",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2001,
+  "first_author": "Krützen et al.",
+  "title": "Characterization of microsatellite loci in Tursiops aduncus",
+  "journal": "Molecular Ecology Notes",
+  "citations": 133,
+  "doi": "https://doi.org/10.1046/j.1471-8278.2001.00065.x",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 1995,
+  "first_author": "Mahiques",
+  "title": "Dinâmica sedimentar atual nas enseadas da região de Ubatuba, estado de São Paulo",
+  "journal": "Boletim do Instituto Oceanográfico",
+  "citations": 125,
+  "doi": "https://doi.org/10.1590/s0373-55241995000200003",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ },
+ {
+  "year": 2014,
+  "first_author": "Cunha et al.",
+  "title": "Population Structure of the Endangered Franciscana Dolphin (Pontoporia blainvillei): Reassessing Management Units",
+  "journal": "PLoS ONE",
+  "citations": 122,
+  "doi": "https://doi.org/10.1371/journal.pone.0085633",
+  "source": "OpenAlex",
+  "retrieved": "2026-11-27"
+ }
+]

@@ -1,0 +1,83 @@
+[
+ {
+  "level": "Global",
+  "jurisdiction": "IUCN",
+  "area": "Global",
+  "year": 2008,
+  "category": "VU",
+  "criterion": "",
+  "source": "Reeves et al. (2008), IUCN Red List"
+ },
+ {
+  "level": "Global",
+  "jurisdiction": "IUCN",
+  "area": "Global",
+  "year": 2017,
+  "category": "VU",
+  "criterion": "",
+  "source": "Zerbini et al. (2017), IUCN Red List"
+ },
+ {
+  "level": "Regional",
+  "jurisdiction": "FMA Ia",
+  "area": "FMA Ia (independent assessment)",
+  "year": 2023,
+  "category": "EN",
+  "criterion": "C2a(ii)",
+  "source": "Sucunza et al. (2023), proposed listing; not an official Red List entry"
+ },
+ {
+  "level": "National",
+  "jurisdiction": "Brazil",
+  "area": "Brazil",
+  "year": 2014,
+  "category": "CR",
+  "criterion": "",
+  "source": "Portaria MMA nº 444/2014"
+ },
+ {
+  "level": "National",
+  "jurisdiction": "Brazil",
+  "area": "Brazil",
+  "year": 2022,
+  "category": "CR",
+  "criterion": "",
+  "source": "Portaria MMA nº 148/2022"
+ },
+ {
+  "level": "National",
+  "jurisdiction": "Uruguay",
+  "area": "Uruguay",
+  "year": 2013,
+  "category": "T",
+  "criterion": "",
+  "source": "Priority species for conservation (Soutullo et al. 2013); national category not confirmed"
+ },
+ {
+  "level": "National",
+  "jurisdiction": "Argentina",
+  "area": "Argentina",
+  "year": null,
+  "category": "T",
+  "criterion": "",
+  "source": "Included in the national list of species in need of protection (CMS COP15 Doc.31.2.8); category not confirmed"
+ },
+ {
+  "level": "National",
+  "jurisdiction": "Brazil",
+  "area": "Brazil (SALVE national assessment)",
+  "year": 2025,
+  "category": "CR",
+  "criterion": "A4bce",
+  "source": "Sucunza et al. (2025), SALVE/ICMBio: projected decline above 90% over 36 years (2009–2045)"
+ },
+ {
+  "level": "National",
+  "jurisdiction": "Brazil",
+  "area": "Brazil",
+  "year": 2026,
+  "category": "CR",
+  "criterion": "",
+  "source": "Portaria MMA nº 1.704/2026 (current national list)"
+ }
+]

@@ -1,0 +1,79 @@
+[
+ {
+  "topic": "Abundance in Argentina",
+  "status": "To confirm",
+  "issue": "The CMS implementation report (Oct 2025) states that no abundance estimates exist for FMAs IVa–IVe; Crespo et al. (2026, published Mar 2026) report estimates for FMA IVb (11,070) and IVc (3,309).",
+  "action": "Confirm with the IWC Scientific Committee which Argentine estimates will enter the Comprehensive Assessment.",
+  "resolution": "Both estimates are shown under FMA IVb and IVc; FMAs IVa, IVd and IVe are shown without estimates."
+ },
+ {
+  "topic": "Estimates for FMA Ib, IIa and IIb",
+  "status": "Resolved",
+  "issue": "Sucunza et al. (2020) estimated 1,915 (CV 0.32) in FMA IIa and 4,353 (CV 0.24) in FMA IIb (6,827 in FMA II, Dec 2008–Jan 2009 surveys). The SALVE assessment (Sucunza et al. 2025) compiles 1,521 for FMA Ib, 55 for Babitonga and 13,137 for FMA III, without naming the original surveys in its summary. The 2022 review chapter (Zerbini et al. 2022) gives no figures in its abstract, and Sucunza et al. (2022) deals with survey bias rather than abundance.",
+  "action": "Identify the original surveys behind the SALVE values for FMA Ib and FMA III (the IWC Comprehensive Assessment from 2026 should list them).",
+  "resolution": "Estimates added for FMA Ib, IIa, IIb, Babitonga and FMA III; SALVE-compiled values are marked as such."
+ },
+ {
+  "topic": "2004 southern Argentina estimate",
+  "status": "To confirm",
+  "issue": "Crespo et al. (2026) cite 5,896 dolphins estimated in 2004 for the “southern area” without naming the FMA in the abstract.",
+  "action": "Assign the estimate to its FMA from the full paper.",
+  "resolution": "Shown as a separate group, FMA IV (southern area)."
+ },
+ {
+  "topic": "Number of management units",
+  "status": "Resolved",
+  "issue": "Secchi et al. (2021) refer to five recognised units, whereas CMS CA 14.5 and the IWC (2023) refer to 11 FMAs (Cunha et al. 2020).",
+  "action": "None.",
+  "resolution": "The dashboard uses the 11 units recognised by the IWC Scientific Committee."
+ },
+ {
+  "topic": "CMP action priorities",
+  "status": "Open",
+  "issue": "The action list reproduced in CMS CA 14.5 gives regions but no priorities, budgets or years for each action.",
+  "action": "Supply the current CMP action table from the IWC.",
+  "resolution": "Actions are shown by strategic line without priority."
+ },
+ {
+  "topic": "IMMAs",
+  "status": "Open",
+  "issue": "The IUCN IMMA dataset could not be retrieved in this session (the e-Atlas refused access), so IMMAs that include the franciscana are not mapped.",
+  "action": "Supply the IUCN IMMA dataset (as was done for the Guiana dolphin dashboard).",
+  "resolution": "The map shows the species’ range and the localities named in CMP actions only."
+ },
+ {
+  "topic": "National categories in Argentina and Uruguay",
+  "status": "To confirm",
+  "issue": "The CMS report states the species is on the national protection lists of all three range states, but the categories for Argentina and Uruguay were not found in the sources reviewed.",
+  "action": "Add the categories and references.",
+  "resolution": "Shown as T (listed, category not confirmed)."
+ },
+ {
+  "topic": "IUCN criteria",
+  "status": "To confirm",
+  "issue": "The criteria of the 2008 and 2017 IUCN assessments were not available in the sources reviewed.",
+  "action": "Add the criteria from the Red List entries.",
+  "resolution": "Shown without criteria."
+ },
+ {
+  "topic": "PAN Toninha, 2nd cycle",
+  "status": "Open",
+  "issue": "The specific objectives of the 2nd-cycle national action plan (Portaria ICMBio 655/2019) could not be retrieved.",
+  "action": "Supply the ordinance or the executive summary so that objectives can be matched to the literature, as for the Guiana dolphin PAN.",
+  "resolution": "Only the ordinance is listed."
+ },
+ {
+  "topic": "Literature coverage",
+  "status": "Resolved",
+  "issue": "An OpenAlex snapshot was added (26–27 Nov 2026): works naming Pontoporia, toninha or “franciscana dolphin” in title or abstract, deduplicated against PubMed by PMID, DOI and title. PubMed still does not index “toninha”.",
+  "action": "Repeat the snapshot periodically; Scopus or Web of Science exports can still be attached.",
+  "resolution": "Evidence counts combine PubMed and OpenAlex; OpenAlex records are listed separately."
+ },
+ {
+  "topic": "Subspecies",
+  "status": "Resolved",
+  "issue": "The CMS COP15 documents name two subspecies, P. b. blainvillei and P. b. pukusi (FMA Ia).",
+  "action": "None.",
+  "resolution": "Mentioned in the management unit notes."
+ }
+]

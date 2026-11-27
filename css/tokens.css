@@ -1,0 +1,58 @@
+/* Design tokens used by css/app.css and the page scripts, with light and dark themes. */
+:root {
+  --color-fg: #1f2328;
+  --color-fg-muted: #5f6670;
+  --color-bg: #ffffff;
+  --color-panel: #f6f7f8;
+  --color-border-line: #dfe2e6;
+  --color-ok: #2e7d4f;
+  --color-warn: #b8700f;
+  --color-bad: #c0392b;
+  --dash-c1: #2f6f9f;
+  --dash-c2: #c7803a;
+  --dash-c3: #4f9a72;
+  --cds-text-secondary: #5f6670;
+  --cds-chart-grid: #e6e8eb;
+  --cds-chart-axis: #c9cdd2;
+  --cds-chart-reference: #8a9099;
+  --cds-surface-popover: #ffffff;
+  --cds-border: #dfe2e6;
+  --cds-shadow-popover: 0 4px 14px rgba(0, 0, 0, .16);
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --cds-font-size-caption: 12px;
+  --cds-font-size-body: 14px;
+  --cds-font-size-heading: 17px;
+  --cds-font-size-title: 24px;
+  --cds-font-weight-medium: 500;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 20px; --cds-gap-xl: 28px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 16px; --cds-pad-xl: 24px;
+  --cds-radius: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: #e6e8eb;
+    --color-fg-muted: #a3a9b2;
+    --color-bg: #15181c;
+    --color-panel: #1d2126;
+    --color-border-line: #30353c;
+    --color-warn: #e0a24a;
+    --color-bad: #e7766a;
+    --dash-c1: #6fa8d6;
+    --dash-c2: #e0a463;
+    --dash-c3: #7cc29c;
+    --cds-text-secondary: #a3a9b2;
+    --cds-chart-grid: #2a2f35;
+    --cds-chart-axis: #3a4048;
+    --cds-chart-reference: #8a9099;
+    --cds-surface-popover: #23282e;
+    --cds-border: #30353c;
+    --cds-shadow-popover: 0 4px 14px rgba(0, 0, 0, .5);
+  }
+}
+html { background: var(--color-bg); color-scheme: light dark; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); }
+#dash-root { padding: 16px; }
+#dash-root .gd-select, #dash-root .dash-select { font: inherit; font-size: var(--cds-font-size-caption); padding: 4px 8px; border-radius: var(--cds-radius); border: 1px solid var(--color-border-line); background-color: var(--color-bg); color: var(--color-fg); max-width: 100%; }
+#dash-root a { color: var(--dash-c1); }
+#dash-root code { font-size: .92em; }

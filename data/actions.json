@@ -1,0 +1,194 @@
+[
+ {
+  "id": "RES-1.1",
+  "line": "RES",
+  "topic": "Population structure",
+  "title": "Redefine the structure and limits of the population",
+  "region": "FMA IIb; FMA III, mostly in the Río de la Plata estuary; FMA IV",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "RES-1.2",
+  "line": "RES",
+  "topic": "Population structure",
+  "title": "Redefine the population structure and stock limits",
+  "region": "All FMAs except Ia and Ib",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "RES-2.1",
+  "line": "RES",
+  "topic": "Cooperation",
+  "title": "Memoranda of understanding between universities and research institutes of Argentina, Brazil and Uruguay to establish common research programmes",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.1",
+  "line": "MON",
+  "topic": "Fisheries monitoring",
+  "title": "Continue to monitor fisheries for probable bycatch, including gear, season, fishing zones and effort",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.2",
+  "line": "MON",
+  "topic": "Bycatch estimation",
+  "title": "Estimate bycatch in all fisheries using on-board observer programmes, whenever possible",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.3",
+  "line": "MON",
+  "topic": "Stranding monitoring",
+  "title": "Monitor beaches to quantify stranded franciscanas and estimate bycatch",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.4",
+  "line": "MON",
+  "topic": "Vessel monitoring",
+  "title": "Strengthen vessel monitoring of the industrial fleet and develop it for the artisanal fleet",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.5",
+  "line": "MON",
+  "topic": "Vessel monitoring",
+  "title": "Provide access to vessel-monitoring data for research and management",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.6",
+  "line": "MON",
+  "topic": "Abundance and trends",
+  "title": "Estimate abundance and population trends",
+  "region": "FMA Ia, Ib; IIa, IIb, II Babitonga; III; IVa–IVe",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.7",
+  "line": "MON",
+  "topic": "Abundance and trends",
+  "title": "Evaluate alternative methods for estimating abundance and population trends",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.8",
+  "line": "MON",
+  "topic": "Removal limits",
+  "title": "Define the maximum permitted fishing-related deaths (for example PBR, MALFIRM)",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-1.9",
+  "line": "MON",
+  "topic": "Population viability",
+  "title": "Population viability analysis (PVA) model",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-2.1",
+  "line": "MON",
+  "topic": "Life history",
+  "title": "Monitor beaches for stranded franciscanas to estimate biological parameters",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MON-2.2",
+  "line": "MON",
+  "topic": "Health and pollution",
+  "title": "Continue assessment of health and pollutant load",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-1.1",
+  "line": "MIT",
+  "topic": "Bycatch reduction",
+  "title": "Develop strategies to evaluate or implement bycatch reduction; meetings with decision makers on monitoring and mitigation",
+  "region": "FMA Ia, Ib; IIa, IIb, II Babitonga; III; IVa–IVe",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-1.2",
+  "line": "MIT",
+  "topic": "Bycatch reduction",
+  "title": "Increase measures applied to reduce bycatch in priority areas and no-capture zones",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-2.1",
+  "line": "MIT",
+  "topic": "Protected areas",
+  "title": "Strengthen the case for conservation areas at the Doce River, Babitonga Bay, Albardão and the Río Negro estuary",
+  "region": "FMA Ia; II Babitonga; III; IVe",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-2.2",
+  "line": "MIT",
+  "topic": "Protected areas",
+  "title": "Set up and implement management plans for existing marine protected areas, with actions for the franciscana",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-2.3",
+  "line": "MIT",
+  "topic": "Protected areas",
+  "title": "Explore and encourage the creation of new protected areas throughout the range",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-2.4",
+  "line": "MIT",
+  "topic": "Socio-economics",
+  "title": "Evaluate the socio-economic impact on fisheries of bycatch mitigation measures",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-3.1",
+  "line": "MIT",
+  "topic": "Alternative gear",
+  "title": "Evaluate and monitor the replacement of gillnets by lower-impact alternative fishing gear",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "MIT-3.2",
+  "line": "MIT",
+  "topic": "Socio-economics",
+  "title": "Evaluate the socio-economic impact of implementing mitigation measures",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "PAC-1.1",
+  "line": "PAC",
+  "topic": "Public awareness",
+  "title": "Continue awareness campaigns on the franciscana and its conservation problems",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ },
+ {
+  "id": "PAC-2.1",
+  "line": "PAC",
+  "topic": "International cooperation",
+  "title": "Raise the franciscana within CMS and the joint technical commission for the Argentina–Uruguay maritime front",
+  "region": "All FMAs",
+  "source": "IWC CMP actions as listed in UNEP/CMS/Concerted Action 14.5"
+ }
+]
